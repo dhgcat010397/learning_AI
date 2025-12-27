@@ -148,9 +148,9 @@ TPR = \frac{TP}{TP + FN}, \quad FPR = \frac{FP}{FP + TN}
 from sklearn.metrics import roc_auc_score
 
 Y_test = [0, 1, 1, 0]
-Y_pred_prob = [0.1, 0.9, 0.4, 0.2]  # probabilities for positive class
+Y_pred_proba = [0.1, 0.9, 0.4, 0.2]  # probabilities for positive class
 
-roc_auc = roc_auc_score(Y_test, Y_pred_prob)
+roc_auc = roc_auc_score(Y_test, Y_pred_proba)
 print("ROC-AUC:", roc_auc)  # Output: 0.75
 ```
 
