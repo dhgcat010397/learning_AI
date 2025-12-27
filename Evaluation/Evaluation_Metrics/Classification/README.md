@@ -34,10 +34,10 @@ Where:
 ```python
 from sklearn.metrics import accuracy_score
 
-Y_test = [0, 1, 1, 0]
-Y_pred = [0, 1, 0, 0]
+y_test = [0, 1, 1, 0]
+y_pred = [0, 1, 0, 0]
 
-acc = accuracy_score(Y_test, Y_pred)
+acc = accuracy_score(y_test, y_pred)
 print("Accuracy:", acc)  # Output: 0.75
 ```
 
@@ -61,10 +61,10 @@ Precision = \frac{TP}{TP + FP}
 ```python
 from sklearn.metrics import precision_score
 
-Y_test = [0, 1, 1, 0]
-Y_pred = [0, 1, 0, 0]
+y_test = [0, 1, 1, 0]
+y_pred = [0, 1, 0, 0]
 
-prec = precision_score(Y_test, Y_pred)
+prec = precision_score(y_test, y_pred)
 print("Precision:", prec)  # Output: 1.0
 ```
 
@@ -88,10 +88,10 @@ Recall = \frac{TP}{TP + FN}
 ```python
 from sklearn.metrics import recall_score
 
-Y_test = [0, 1, 1, 0]
-Y_pred = [0, 1, 0, 0]
+y_test = [0, 1, 1, 0]
+y_pred = [0, 1, 0, 0]
 
-rec = recall_score(Y_test, Y_pred)
+rec = recall_score(y_test, y_pred)
 print("Recall:", rec)  # Output: 0.5
 ```
 
@@ -116,10 +116,10 @@ F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall}
 ```python
 from sklearn.metrics import f1_score
 
-Y_test = [0, 1, 1, 0]
-Y_pred = [0, 1, 0, 0]
+y_test = [0, 1, 1, 0]
+y_pred = [0, 1, 0, 0]
 
-f1 = f1_score(Y_test, Y_pred)
+f1 = f1_score(y_test, y_pred)
 print("F1 Score:", f1)  # Output: 0.6666666666666666
 ```
 
@@ -147,10 +147,10 @@ TPR = \frac{TP}{TP + FN}, \quad FPR = \frac{FP}{FP + TN}
 ```python
 from sklearn.metrics import roc_auc_score
 
-Y_test = [0, 1, 1, 0]
-Y_pred_proba = [0.1, 0.9, 0.4, 0.2]  # probabilities for positive class
+y_test = [0, 1, 1, 0]
+y_pred_proba = [0.1, 0.9, 0.4, 0.2]  # probabilities for positive class
 
-roc_auc = roc_auc_score(Y_test, Y_pred_proba)
+roc_auc = roc_auc_score(y_test, y_pred_proba)
 print("ROC-AUC:", roc_auc)  # Output: 0.75
 ```
 
@@ -158,7 +158,7 @@ print("ROC-AUC:", roc_auc)  # Output: 0.75
 
 1. Open the notebook `how_to_use.ipynb` in VS Code or Jupyter.
 2. Run the cells to see calculations with sample data.
-3. Modify `Y_test`, `Y_pred`, and `Y_pred_proba` to experiment with your own data.
+3. Modify `y_test`, `y_pred`, and `y_pred_proba` to experiment with your own data.
 4. Compare metrics to select the best model for your classification task.
 
 ## Notes

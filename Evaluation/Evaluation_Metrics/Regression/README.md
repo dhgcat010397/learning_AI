@@ -33,10 +33,10 @@ Where:
 ```python
 from sklearn.metrics import mean_absolute_error
 
-Y_test = [3, -0.5, 2, 7]
-Y_pred = [2.5, 0.0, 2, 8]
+y_test = [3, -0.5, 2, 7]
+y_pred = [2.5, 0.0, 2, 8]
 
-mae = mean_absolute_error(Y_test, Y_pred)
+mae = mean_absolute_error(y_test, y_pred)
 print("MAE:", mae)  # Output: 0.5
 ```
 
@@ -61,10 +61,10 @@ RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
 ```python
 from sklearn.metrics import root_mean_squared_error
 
-Y_test = [3, -0.5, 2, 7]
-Y_pred = [2.5, 0.0, 2, 8]
+y_test = [3, -0.5, 2, 7]
+y_pred = [2.5, 0.0, 2, 8]
 
-rmse = root_mean_squared_error(Y_test, Y_pred, squared=False)
+rmse = root_mean_squared_error(y_test, y_pred, squared=False)
 print("RMSE:", rmse)  # Output: 0.6123724356957945
 ```
 
@@ -90,10 +90,10 @@ MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
 ```python
 from sklearn.metrics import root_mean_squared_error
 
-Y_test = [3, -0.5, 2, 7]
-Y_pred = [2.5, 0.0, 2, 8]
+y_test = [3, -0.5, 2, 7]
+y_pred = [2.5, 0.0, 2, 8]
 
-mse = root_mean_squared_error(Y_test, Y_pred)  # squared=True by default
+mse = root_mean_squared_error(y_test, y_pred)  # squared=True by default
 print("MSE:", mse)  # Output: 0.375
 ```
 
@@ -122,10 +122,10 @@ Where:
 ```python
 from sklearn.metrics import r2_score
 
-Y_test = [3, -0.5, 2, 7]
-Y_pred = [2.5, 0.0, 2, 8]
+y_test = [3, -0.5, 2, 7]
+y_pred = [2.5, 0.0, 2, 8]
 
-r2 = r2_score(Y_test, Y_pred)
+r2 = r2_score(y_test, y_pred)
 print("R2:", r2)  # Output: 0.9565217391304348
 ```
 
@@ -133,7 +133,7 @@ print("R2:", r2)  # Output: 0.9565217391304348
 
 1. Open the notebook `how_to_use.ipynb` in VS Code or Jupyter.
 2. Run the cells to see calculations with sample data.
-3. Modify `Y_test` and `Y_pred` to experiment with your own data.
+3. Modify `y_test` and `y_pred` to experiment with your own data.
 4. Compare metrics to select the best model for your regression task.
 
 ## Notes
